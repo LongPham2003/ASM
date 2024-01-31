@@ -1,0 +1,22 @@
+<div class="modal-body w-75 mx-auto  my-3">
+    <form>
+        <div class="mb-3">
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Họ Tên"
+                aria-describedby="emailHelp" ng-model="customer.name" disabled>
+        </div>
+        <div class="mb-3">
+            <input type="" class="form-control" id="exampleInputPassword1" placeholder="Email" ng-model="customer.email"
+                disabled>
+        </div>
+        <div class="mb-3">
+            <input class="form-control" id="exampleInputPassword1" placeholder="SDT" ng-model="customer.phone" disabled>
+        </div>
+        <div class="mb-3">
+            <input class="form-control" id="exampleInputPassword1" placeholder="Địa Chỉ" ng-model="customer.adress" disabled>
+        </div>
+    </form>
+    <div class="align-content-center ">
+        <a href="#!add"><Button class="btn btn-success">Thêm mới</Button></a>
+        <a href="#!chinhsua/{{item.editid}}"><Button type="submit" class="btn btn-success">Sửa</Button></a>
+    </div>
+</div>

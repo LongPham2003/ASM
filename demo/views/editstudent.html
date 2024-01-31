@@ -1,0 +1,22 @@
+<div>
+    <h1 class="text-center">{{title}}</h1>
+    <button class="btn btn-success">Thêm mới</button>
+    <div class="card-body">
+        <form ng-submit="editStudent()">
+            <label for="" class=" form-label  ">Ho va ten </label>
+            <input type="text"class=" form-control " ng-model="student.name">
+             <div ng-if="kiemtra.name" class=""> vui lòng nhập tên </div>
+            <label for="" class=" form-label  ">Nam sinh </label>
+            <input type="text"class=" form-control "ng-model="student.year">
+            <div ng-if="kiemtra.year" class=""> vui lòng nhập Năm sinh </div>
+            <label for="" class=" form-label  ">Chuyen nganh</label>
+            <input type="text"class=" form-control "ng-model="student.coure">
+            <div ng-if="kiemtra.coure" class=""> vui lòng nhập Chuyên ngành </div>
+            <div>
+                <button type="submit" class="btn btn-success ">sửa </button>
+                <button type="reset"class="btn btn-success ">huy</button>
+             </div>
+        </form>
+        
+    </div>
+</div>

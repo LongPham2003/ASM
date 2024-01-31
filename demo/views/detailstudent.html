@@ -1,0 +1,23 @@
+<div>
+    <h1 class="text-center">{{title}}</h1>
+    <button class="btn btn-success">Thêm mới</button>
+    <div class="card-body">
+        <form>
+            <label for="" class=" form-label  ">Ho va ten </label>
+            <input type="text" class=" form-control " ng-model="student.name" disabled>
+
+            <label for="" class=" form-label  ">Nam sinh </label>
+            <input type="text" class=" form-control " ng-model="student.year" disabled>
+
+            <label for="" class=" form-label  ">Chuyen nganh</label>
+            <input type="text" class=" form-control " ng-model="student.coure" disabled>
+
+            <div>
+                <a href="#!/edit-students/{{student.editID}}"> <button type="submit" class="btn btn-success ">Chỉnh sửa
+                    </button></a>
+
+            </div>
+        </form>
+
+    </div>
+</div>

@@ -1,0 +1,66 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": "2",
+      "title": "luudv3",
+      "author": "dz"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "students": [
+    {
+      "ten": "Trần tuấn anh",
+      "namSinh": 2005,
+      "chuyenNganh": "0909922732",
+      "id": "1"
+    },
+    {
+      "ten": "Nguyễn văn việt",
+      "namSinh": 2005,
+      "chuyenNganh": "0903409022",
+      "id": "2"
+    },
+    {
+      "ten": "Dang hoa",
+      "namSinh": "2009",
+      "chuyenNganh": "0327936667",
+      "id": "3"
+    },
+    {
+      "ten": "Luudv32",
+      "namSinh": "2005",
+      "chuyenNganh": "04343240942",
+      "id": "4"
+    }
+  ],
+  "customers": [
+    {
+      "id": "1",
+      "ten": "Long",
+      "email": "Long@",
+      "sdt": "0987887866",
+      "diachi": "Hà Nội"
+    },
+    {
+      "id": "2",
+      "ten": "Thịnh",
+      "email": "Thịnh@",
+      "sdt": "0987887866",
+      "diachi": "Hà Nội"
+    }
+  ]
+}

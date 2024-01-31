@@ -1,0 +1,28 @@
+<div>
+    <h1 class="text-center">{{title}}</h1>
+    <a href="#!/them">
+        <button class="btn btn-success">Thêm mới</button>
+    </a>
+    
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <th>STT</th>
+                <th>Họ và tên</th>
+                <th>Năm sinh</th>
+                <th>Chuyên ngành</th>
+                <th>Thao tác</th>
+            </thead>
+            <tr ng-repeat="item in liststudents">
+                <td>{{ $index + 1 }}</td>
+                <td>{{ item.ten}}</td>
+                <td>{{ item.namSinh }}</td>
+                <td>{{ item.chuyenNganh}}</td>
+                <td>
+                    <a href="#!/detail-students/{{item.id}}"><button type="submit" class="btn btn-warning">Chi tiết</button></a>
+                    <button type="submit" class="btn btn-danger" ng-click="deleteStudent(item.id)">Xóa</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
