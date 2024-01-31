@@ -1,22 +1,22 @@
-window.EditStudentcontroller=function ($scope, $http, $routeParams,$location) {
+window.EditStudentcontroller = function ($scope, $http, $routeParams, $location) {
     $scope.title = "Đây là chỉnh sửa ";
     const apistudents = "http://localhost:3000/students";
-    let studentID=$routeParams.id;
+    let studentID = $routeParams.id;
     // $http. phương thức http(link api).then(công việc cần làm)
     // get ,post,put ,delete
     $http.get(
-        apistudents + '/'+ studentID
+        apistudents + '/' + studentID
         // `${apistudents}/${studentID}`
-    ).then( function(response){
-         if(response.status==200){
+    ).then(function (response) {
+        if (response.status == 200) {
             // console.log(response.data);
-            $scope.student={
-                editID:response.data.id,
-                name:response.data.ten,
-                year:response.data.namSinh ,
-                coure:response.data.chuyenNganh   
-                }
-         }
+            $scope.student = {
+                editID: response.data.id,
+                name: response.data.ten,
+                year: response.data.namSinh,
+                coure: response.data.chuyenNganh
+            }
+        }
     });
     $scope.editStudent = function () {
         // 
@@ -38,7 +38,7 @@ window.EditStudentcontroller=function ($scope, $http, $routeParams,$location) {
             flag = false,
                 $scope.kiemtra.name = true
         }
-        if(flag){
+        if (flag) {
             // nhập dữ  liệu input
             let newstudents = {
                 ten: $scope.student.name,
@@ -47,15 +47,15 @@ window.EditStudentcontroller=function ($scope, $http, $routeParams,$location) {
             }
             //  console.log( newStudent);
             $http.put(
-               `${apistudents}/${studentID}`,
+                `${apistudents}/${studentID}`,
                 newstudents
             ).then(function (response) {
                 if (response.status == 200) {
                     $location.path("trang-chu")
                 }
             })
-        } else{
+        } else {
             alert("Nhập đầy đủ thông tin ")
-        } 
+        }
     }
 }

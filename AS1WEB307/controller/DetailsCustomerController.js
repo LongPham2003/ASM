@@ -6,7 +6,7 @@ window.DetailsCustomerController = function ($scope, $http, $routeParams) {
     ).then(function (response) {
         if (response.status == 200) {
             $scope.customer = {
-                editid: response.data.id,
+                editID: response.data.id,
                 name: response.data.ten,
                 email: response.data.email,
                 phone:response.data.sdt,

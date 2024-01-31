@@ -147,7 +147,6 @@
   <script src="/AS1WEB307/controller/addCustomerController.js"></script>
   <script src="/AS1WEB307/controller/DetailsCustomerController.js"></script>
   <script src="/AS1WEB307/controller/EditCustomerController.js"></script>
-  <script src="/AS1WEB307/controller/trangController.js"></script>
   <script>
     let myapp = angular.module('appRoute', ['ngRoute']);
     myapp.config(function ($routeProvider) {
@@ -180,10 +179,10 @@
           }
         )
         .when(
-          '/chinhsua/:editid',
+          '/chinhsua/:editID',
           {
             templateUrl: 'views/chinhsua.html',
-            //controller:EditCustomerController
+            controller: EditCustomerController
           }
         )
     })

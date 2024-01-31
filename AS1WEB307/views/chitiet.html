@@ -12,11 +12,13 @@
             <input class="form-control" id="exampleInputPassword1" placeholder="SDT" ng-model="customer.phone" disabled>
         </div>
         <div class="mb-3">
-            <input class="form-control" id="exampleInputPassword1" placeholder="Địa Chỉ" ng-model="customer.adress" disabled>
+            <input class="form-control" id="exampleInputPassword1" placeholder="Địa Chỉ" ng-model="customer.adress"
+                disabled>
+        </div>
+        <div class="align-content-center ">
+            <a href="#!add"><Button class="btn btn-success">Thêm mới</Button></a>
+            <a href="#!chinhsua/{{customer.editID}}"><Button class="btn btn-success">Sửa</Button></a>
         </div>
     </form>
-    <div class="align-content-center ">
-        <a href="#!add"><Button class="btn btn-success">Thêm mới</Button></a>
-        <a href="#!chinhsua/{{item.editid}}"><Button type="submit" class="btn btn-success">Sửa</Button></a>
-    </div>
+
 </div>
