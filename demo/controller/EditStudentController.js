@@ -1,5 +1,4 @@
 window.EditStudentcontroller = function ($scope, $http, $routeParams, $location) {
-    $scope.title = "Đây là chỉnh sửa ";
     const apistudents = "http://localhost:3000/students";
     let studentID = $routeParams.id;
     // $http. phương thức http(link api).then(công việc cần làm)
